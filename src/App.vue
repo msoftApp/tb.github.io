@@ -3,7 +3,7 @@
     <div v-if="!isLoaded&&!isiOS()" class="fakeloader" />
     <!-- 壳子部署到哪里都无所谓 -->
     <!-- 修改成为vue核心地址 -->
-    <!-- <iframe v-if="!isiOS()" src="http://116.62.214.202:8081/tbc/index/home" frameborder="0" @load="onload" /> -->
+    <iframe v-if="!isiOS()" src="http://116.62.214.202:8081/tbc/index/home" frameborder="0" @load="onload" />
     <IOSDialog v-if="isiOS()" />
   </div>
 </template>
